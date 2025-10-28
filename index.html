@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Десертна магія</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Десертна магія</h1>
+
+    <div class="intro">
+        <p>Ласкаво просимо до нашої кулінарної книги! Тут ви знайдете найсмачніший рецепт класичного брауні. Насолоджуйтеся ароматами солодощів і відкрийте для себе нові смаки!</p>
+    </div>
+
+    <div class="gallery">
+        <div><img src="1.PNG" alt="Класичні десерти"></div>
+        <div><img src="2.PNG" alt="Десерти без випікання"></div>
+        <div><img src="3.PNG" alt="Корисні рецепти"></div>
+    </div>
+
+    <hr class="divider">
+
+    <h2>Класичний десерт</h2>
+    <h3>Шоколадний брауні</h3>
+
+    <div class="recipe-card">
+        <div class="recipe-content">
+            <div class="recipe-image">
+                <img src="брауні.jpg" alt="Шоколадні брауні">
+            </div>
+
+            <div class="ingredients">
+                <h3>Інгредієнти:</h3>
+                <ul>
+                    <li>240 г вершкового масла</li>
+                    <li>2 ст. л. олії</li>
+                    <li>260 г цукру</li>
+                    <li>4 яйця</li>
+                    <li>10 г ванільного цукру</li>
+                    <li>130 г борошна</li>
+                    <li>100 г какао</li>
+                    <li>190 г шоколаду</li>
+                    <li>⅓ ч. л. солі</li>
+                </ul>
+            </div>
+
+            <h3>Спосіб приготування:</h3>
+            <p>
+                <strong>Крок 1:</strong> Застеліть форму (24×24 см) пергаментом. Духовку нагрійте до 180°C.<br><br>
+                <strong>Крок 2:</strong> Збийте масло, цукор і олію до кремоподібного стану.<br><br>
+                <strong>Крок 3:</strong> Додайте яйця, ванільний цукор, добре перемішайте.<br><br>
+                <strong>Крок 4:</strong> Окремо змішайте борошно, какао і сіль. Додайте в тісто.<br><br>
+                <strong>Крок 5:</strong> Розтопіть шоколад, додайте до тіста.<br><br>
+                <strong>Крок 6:</strong> Викладіть тісто у форму, випікайте 25 хвилин. Дайте охолонути.
+            </p>
+
+            <h3>Корисні властивості інгредієнтів:</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Інгредієнт</th>
+                        <th>Корисні властивості</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Вершкове масло</td>
+                        <td>Багате на вітаміни A і D, підтримує здоров'я шкіри та очей</td>
+                    </tr>
+                    <tr>
+                        <td>Цукор</td>
+                        <td>Джерело енергії, але слід вживати в помірних кількостях</td>
+                    </tr>
+                    <tr>
+                        <td>Шоколад</td>
+                        <td>Містить антиоксиданти, які підтримують серцево-судинну систему</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Поради:</h3>
+            <ol>
+                <li>Додати горіхи: волоські або мигдаль зроблять десерт більш хрустким.</li>
+                <li>Для більш шоколадного смаку використовуйте чорний шоколад із високим вмістом какао.</li>
+                <li>Щоб брауні був м'якшим, збільште кількість масла на 20 г.</li>
+            </ol>
+        </div>
+    </div>
+
+    <!-- Відео як картка -->
+    <div class="video-container">
+        <h3>Рецепт брауні з вишнею</h3>
+            <source src="брауні.MP4" type="video/mp4">
+        </video>
+        <p class="video-author">Автор: Євген Клопотенко</p>
+    </div>
+
+    <!-- Тест по центру -->
+    <div class="quiz-container">
+        <h3>Кулінарний тест</h3>
+        <div id="quiz-container"></div>
+        <button id="submit-btn">Перевірити</button>
+        <button id="restart-btn">Спробувати знову</button>
+        <div id="results"></div>
+    </div>
+
+    <footer>
+        <p>© 2025 Десертна магія. Всі права захищені.</p>
+    </footer>
+
+    <!-- Скрипт тесту -->
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const questions = [
+            { question: "Який основний інгредієнт у брауні?", answers: [ { text: "Борошно", correct: false }, { text: "Шоколад", correct: true }, { text: "Цукор", correct: false }, { text: "Яйця", correct: false } ] },
+            { question: "Що використовують для загущення чизкейку без випікання?", answers: [ { text: "Желатин", correct: true }, { text: "Борошно", correct: false }, { text: "Яйця", correct: false }, { text: "Крохмаль", correct: false } ] },
+            { question: "Який корисний інгредієнт можна додати до сирників замість борошна?", answers: [ { text: "Манку", correct: false }, { text: "Вівсяні пластівці", correct: true }, { text: "Крохмаль", correct: false }, { text: "Сухарі", correct: false } ] },
+            { question: "При якій температурі випікають класичний брауні?", answers: [ { text: "160°C", correct: false }, { text: "180°C", correct: true }, { text: "200°C", correct: false }, { text: "220°C", correct: false } ] },
+            { question: "Як довго охолоджують чизкейк без випікання перед подачею?", answers: [ { text: "30 хвилин", correct: false }, { text: "1 годину", correct: false }, { text: "2 години", correct: true }, { text: "4 години", correct: false } ] }
+        ];
+
+        const quizContainer = document.getElementById('quiz-container');
+        const resultsContainer = document.getElementById('results');
+        const submitButton = document.getElementById('submit-btn');
+        const restartButton = document.getElementById('restart-btn');
+
+        let score = 0;
+
+        function buildQuiz() {
+            quizContainer.innerHTML = '';
+            questions.forEach((question, qIndex) => {
+                const qDiv = document.createElement('div');
+                qDiv.className = 'question';
+                qDiv.innerHTML = `<p class="question-text">${qIndex+1}. ${question.question}</p><div class="answers" id="answers-${qIndex}"></div>`;
+                quizContainer.appendChild(qDiv);
+
+                const ansDiv = document.getElementById(`answers-${qIndex}`);
+                question.answers.forEach((answer, aIndex) => {
+                    const ans = document.createElement('div');
+                    ans.className = 'answer';
+                    ans.innerHTML = `<input type="radio" name="question-${qIndex}" id="q${qIndex}a${aIndex}" value="${answer.correct}"><label for="q${qIndex}a${aIndex}">${answer.text}</label>`;
+                    ansDiv.appendChild(ans);
+                });
+            });
+        }
+
+        function showResults() {
+            score = 0;
+            const answerContainers = quizContainer.querySelectorAll('.answers');
+            answerContainers.forEach((container, questionNumber) => {
+                const selector = `input[name="question-${questionNumber}"]:checked`;
+                const userAnswer = (container.querySelector(selector) || {}).value;
+                if(userAnswer === "true") score++;
+            });
+
+            resultsContainer.innerHTML = `<p class="result-text">Ваш результат: ${score} з ${questions.length}</p>
+            <p class="result-message">${getResultMessage(score)}</p>`;
+            submitButton.style.display = 'none';
+        }
+
+        function getResultMessage(score){
+            const percentage = (score / questions.length) * 100;
+            if(percentage >= 80) return "Відмінно! Ви справжній кулінарний експерт!";
+            if(percentage >= 60) return "Добре! Але є ще чому вчитися.";
+            if(percentage >= 40) return "Непогано, але варто більше практикуватися на кухні.";
+            return "Потрібно більше досліджувати кулінарні рецепти!";
+        }
+
+        function restartQuiz(){
+            resultsContainer.innerHTML = '';
+            submitButton.style.display = 'inline-block';
+            buildQuiz();
+        }
+
+        submitButton.addEventListener('click', showResults);
+        restartButton.addEventListener('click', restartQuiz);
+
+        buildQuiz();
+    });
+    </script>
+	 
+</body>
+</html>
